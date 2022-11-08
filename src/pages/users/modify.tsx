@@ -110,7 +110,7 @@ const Show = () => {
             <div className="well">
               <form method="post" action="#">
                 <fieldset>
-                  <Title title="基本情報の変更" />
+                  <Title title="基本情報変更" />
 
                   <NameForm
                     SetFirstNameValue={SetFirstNameValue}

@@ -62,7 +62,7 @@ const Show = () => {
           <link rel="icon" href="/3106.png" />
         </Head>
 
-        <Nav name="基本情報の変更" />
+        <Nav name="基本情報変更" />
 
         <div className={`row ${styles.row}`}>
           <div

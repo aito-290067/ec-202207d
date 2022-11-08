@@ -8,6 +8,7 @@ import useSWR, { useSWRConfig } from 'swr';
 import { useRouter } from "next/router";
 import { Router, useLocation } from "react-router-dom"
 import { memo, FC } from "react"
+import styleButton from "../../styles/register_user.module.css"
 
 const fetcher = (url: any) => fetch(url).then((res) => res.json());
 
@@ -60,7 +61,7 @@ export const Show: FC = memo(() => {
           <link rel="icon" href="/3506.png" />
         </Head>
         <div className='container'>
-          <Title title="基本情報の変更" />
+          <Title title="基本情報変更" />
 
           <h1></h1>
 
@@ -79,7 +80,7 @@ export const Show: FC = memo(() => {
       </Head>
 
       <div className="container">
-        <Title title="基本情報の変更" />
+        <Title title="基本情報変更" />
         <Nav name="" />
 
         <div className="row bg-light  col-lg-offset-3 col-lg-5 col-md-offset-2 col-md-8 col-sm-10 col-xs-12 m-auto">
@@ -110,10 +111,10 @@ export const Show: FC = memo(() => {
           </div>
           <hr className='col-11 mx-3 ' />
           <div className="col d-flex align-items-center justify-content-center">
-            <button className='btn btn-outline-info col-4 mx-2 mb-3' onClick={() => {
+            <button className={`${styleButton.btnClear} col-4 mx-2 mb-3`} onClick={() => {
               router.push(`/users/modify`)
             }}>戻る</button>
-            <button className='btn btn-info col-4 mx-2 mb-3 text-light' onClick={async () => {
+            <button className={`col-4 mx-2 mb-3 text-light ${styleButton.btn}`} onClick={async () => {
 
               const datas = {
                 name: `${data[0].name}`,

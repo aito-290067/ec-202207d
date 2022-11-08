@@ -11,7 +11,7 @@ import Head from 'next/head';
 import { Swiper, SwiperSlide } from 'swiper/react'; //カルーセル用のタグをインポート
 import SwiperCore, { Pagination, Autoplay, EffectFade } from 'swiper'; //使いたい機能をインポート
 import s from './TestCarousel.module.css'; //同じディレクトリにCSSを用意
-import style from '../styles/topPage.module.css';
+import style from '../styles/toppage.module.css';
 import Link from 'next/link';
 SwiperCore.use([Pagination, Autoplay, EffectFade]);
 // カルーセルにする画像のソースをリストにします

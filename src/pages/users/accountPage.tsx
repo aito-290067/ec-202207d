@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import useSWR, { useSWRConfig } from 'swr';
 import { useRouter } from "next/router";
+import styleButton from "../../styles/register_user.module.css"
 
 const fetcher = (url: any) => fetch(url).then((res) => res.json());
 
@@ -67,7 +68,7 @@ export const Show = () => {
             </div>
             <div className="col d-flex align-items-center justify-content-center">
             
-                <button className='btn btn-outline-info'>変更</button>
+                <button className={styleButton.btnAccount}>変更</button>
            
             </div>
           </div>
@@ -81,7 +82,7 @@ export const Show = () => {
             </div>
             <div className="col d-flex align-items-center justify-content-center">
         
-                <button className='btn btn-outline-info '>変更</button>
+                <button className={styleButton.btnAccount}>変更</button>
          
             </div>
           </div>
@@ -102,7 +103,7 @@ export const Show = () => {
 
       <div className="container">
         <Nav name="" />
-        <Title title="基本情報の変更" />
+        <Title title="基本情報変更" />
 
         <div className="row bg-light  col-lg-offset-3 col-lg-5 col-md-offset-2 col-md-8 col-sm-10 col-xs-12 m-auto">
           <p className="m-1 py-1">基本情報</p>
@@ -127,7 +128,7 @@ export const Show = () => {
           </div>
           <div className="col d-flex align-items-center justify-content-center">
   
-              <button className='btn btn-outline-info' onClick={()=>{
+              <button className={styleButton.btnAccount} onClick={()=>{
               router.push(`/users/modify`)
               }}>変更</button>
        
@@ -143,7 +144,7 @@ export const Show = () => {
           </div>
           <div className="col d-flex align-items-center justify-content-center">
           
-              <button className='btn btn-outline-info' onClick={()=>{
+              <button className={styleButton.btnAccount} onClick={()=>{
               router.push(`/users/modifyPass`)
               }}>変更</button>
           

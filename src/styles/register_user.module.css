@@ -124,6 +124,16 @@
   height: 40px;
 }
 
+.btnAccount {
+  width: 80px;
+  background-color: #d9534f;
+  border-color: #d9534f;
+  border-radius: 10px;
+  margin-right: 10px;
+  height: 40px;
+}
+
+
 
 /* nav */
 .btnStyle {
